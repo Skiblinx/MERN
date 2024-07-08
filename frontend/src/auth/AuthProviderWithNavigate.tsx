@@ -14,7 +14,7 @@ const AuthProviderWithNavigate = ({ children }: Props) => {
   }
 
   const onRedirectCallback = (appState?: AppState, user?: User) => {
-    console.log("USER: " + user)
+    console.log("USER: " + user?.name)
   }
 
   return (
