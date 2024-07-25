@@ -1,4 +1,4 @@
-import express, {Response, Request} from 'express';
+import express, { Response, Request } from 'express';
 import cors from 'cors';
 import "dotenv/config"
 import mongoose from 'mongoose';
@@ -12,6 +12,11 @@ app.use(cors());
 
 app.use("/api/my/user", myUserRoute)
 
+app.get("/test", async (req: Request, res: Response) => {
+  res.json({ message: "Hello!" });
+})
+
 app.listen(7000, () => {
   console.log("server started on localhost:7000")
 })
+
