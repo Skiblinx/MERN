@@ -14,7 +14,7 @@ declare global {
 
 export const jwtCheck = auth({
   audience: process.env.AUTH0_AUDIENCE,
-  issuerBaseURL: process.env.AUUTH0_ISSUER_BASE_URL,
+  issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL,
   tokenSigningAlg: 'RS256'
 });
 
