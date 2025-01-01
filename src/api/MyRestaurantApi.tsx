@@ -28,7 +28,7 @@ export const useCreateMyRestaurant = () => {
 
   const { mutate: createRestaurant, isLoading, isSuccess, error } = useMutation(createMyRestaurantRequest);
 
-  if (!isSuccess) {
+  if (isSuccess) {
     toast.success("Restuarant created successfully")
   }
 
